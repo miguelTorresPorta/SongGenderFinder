@@ -12,17 +12,17 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC  
 
 # Read the data
-df = pd.read_csv('train_data.csv', header=None)
+df = pd.read_csv('all-2/train_data.csv', header=None)
 
 # Read labels
-labels_df = pd.read_csv('train_labels.csv', header=None)
+labels_df = pd.read_csv('all-2/train_labels.csv', header=None)
 
 # Read training set
-test_df = pd.read_csv('test_data.csv', header=None)
+test_df = pd.read_csv('all-2/test_data.csv', header=None)
 
 # Read dummy_test
-dummy_df = pd.read_csv('dummy_solution_accuracy.csv', index_col = 'Sample_id')
-dummy_df_logloss = pd.read_csv('dummy_solution_logloss.csv', index_col = 'Sample_id')
+dummy_df = pd.read_csv('all-2/dummy_solution_accuracy.csv', index_col = 'Sample_id')
+dummy_df_logloss = pd.read_csv('all-2/dummy_solution_logloss.csv', index_col = 'Sample_id')
 
 # First 10 lines
 df.head(10)
