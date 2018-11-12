@@ -105,7 +105,7 @@ lastPredictions = logisticRegr.predict(test_scaled)
 
 ###### Write output labels
 dummy_df['Sample_label'] = lastPredictions
-dummy_df.to_csv('../dummy_example_solution4.csv')
+dummy_df.to_csv('results_dummy_example_solution4.csv')
 ###### Write output logloss
 dummy_df_logloss['Class_1'] = lastPredictionLogLoss[:,0]
 dummy_df_logloss['Class_2'] = lastPredictionLogLoss[:,1]
@@ -117,7 +117,7 @@ dummy_df_logloss['Class_7'] = lastPredictionLogLoss[:,6]
 dummy_df_logloss['Class_8'] = lastPredictionLogLoss[:,7]
 dummy_df_logloss['Class_9'] = lastPredictionLogLoss[:,8]
 dummy_df_logloss['Class_10'] = lastPredictionLogLoss[:,9]
-dummy_df_logloss.to_csv('../dummy_logloss_solution4.csv')
+dummy_df_logloss.to_csv('results_dummy_logloss_solution4.csv')
 
 ################### fit transform ##############3
 pca = PCA(n_components=0.90, whiten=True)
